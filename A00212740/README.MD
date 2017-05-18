@@ -85,9 +85,15 @@ que se vera de esta forma:
 ![][7]
 ![][8]
 ![][9]
+
+Debido  a que algunas consultas necesitan de programas particulares como sysstat,debemos antes de lanzar la aplicacion instalar estas dependencias con:
+
+        sudo apt-get install sysstat
+
 ![][10]
 
 
+        
 
 
 
