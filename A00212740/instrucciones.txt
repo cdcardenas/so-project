@@ -1,0 +1,8 @@
+Para la ejecucion en segundo plano ejecutar el comando con permisos root:
+ $ crontab -u check_user -e 
+
+luego en el editor de texto introducir:
+
+* * * * * python ~/repositories/so-exam2/A00212740/background.py > ~/repositories/so-exam2/A00212740/dblocal.txt
+
+finalmente guardar los cambios realizados con :x
