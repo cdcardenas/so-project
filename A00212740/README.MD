@@ -70,8 +70,26 @@ con el ambiente activo procedemos a instalar Flask
     
 Ahora debemos clonar el repositorio que contiene la aplicacion web del segundo parcial para ello usamos git
 
-    git clone git
+    git clone https://github.com/cdcardenas/so-exam2.git
     
+antes de poder lanzar la aplicacion debemos abrir los puertos que usaremos con la aplicacion en este caso vamos a abrir los puertos 80 y 8080 usando los siguientes comandos
+
+        sudo ufw allow 80
+        sudo ufw allow 8080
+        sudo ufw enable
+        
+Ahora y ya con los puertos abiertos podemos ejecutar la aplicacion web
+que se vera de esta forma:
+
+![][6]
+![][7]
+![][8]
+![][9]
+![][10]
+
+
+
+
 
 
 
@@ -84,3 +102,10 @@ Ahora debemos clonar el repositorio que contiene la aplicacion web del segundo p
 [3]: images/3.PNG
 [4]: images/4.PNG
 [5]: images/5.PNG
+[6]: images/6.PNG
+[7]: images/7.PNG
+[8]: images/8.PNG
+[9]: images/9.PNG
+[10]: images/10.PNG
+
+
