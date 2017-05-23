@@ -1,12 +1,14 @@
 Universidad ICESI
 
-Christian Cárdenas
+Christian Cárdenas A00212740
 
-Jorge Arturo Hernandez
+Jorge Arturo Hernandez A00317220
 
-Ray Torres
+Ray Torres A00309856
 
 Proyecto Final de sistemas operacionales
+
+URL: https://github.com/cdcardenas/so-project/
 
 1.Montaje de la maquina virtual Ubuntu Server 16.04 
 
