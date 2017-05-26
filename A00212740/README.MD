@@ -28,12 +28,25 @@ Aqui ya podemos ver el servidor ubuntu en funcionamiento
 
 ![][5]
 
-Ahora debemos instalar los paquetes necesarios para el funcionamiento de python, esto lo hacemos mediante los siguientes comandos
+Descripcion:
+
+-- para configurar las interfaces de red en ubuntu en necesario configurar el archivo interfaces localizado en 
+
+    sudo vi   /etc/network/interfaces
+    
+En este archivo es necesario agregar el tipo de enlace que deseamos: estatico o dinamico y el nombre de la interfaz, entre otras configuraciones
+
+-- para configurar los puertos es necesario verificar primero el funcionamiento del firewall, que en ubunto se llama ufw(uncomplicated firewall) y esta desactivado por defecto
+
+--finalmente vale la pena resaltar que a diferencia de CentOS donde el usuario tiene acceso a un usuario root con todos los privilegios de administrador, en ubuntu ese usuario no existe, en cambio por medio del comando sudo se puede acceder a permisos de alto nivel
+
+
+Ahora debemos instalar las dependencias necesarias para el funcionamiento de python, esto lo hacemos mediante los siguientes comandos
 
     sudo apt-get install build-essential checkinstall
     sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
 
-Descargamos python 2.7 mediante el comando
+Descargamos python 2.7 mediante el comando, vale la pena aclarar que ubuntu viene por defecto con python 3, sin embargo se decidio usar python 2.7 para evitar algun inconveniente que pueda llegar a surgir.
 
     wget https://www.python.org/ftp/python/2.7.13/Python-2.7.13.tgz
 
@@ -41,7 +54,7 @@ descomprimimos el paquete con
 
     tar xzf Python-2.7.13.tgz
     
-ahora compilamos Python, lo configuramos, finalmente lo instalamos usando los comandos
+ahora compilamos Python, lo configuramos, finalmente lo instalamos usando los comandos, usando el comando install en vez de altinstall nos aseguramos que cuando ejecutemos python, ejecute la version 2.7 y no la que viene por defecto
 
     cd Python-2.7.13
     sudo ./configure
@@ -69,6 +82,9 @@ para activar el ambiente usamos
 con el ambiente activo procedemos a instalar Flask
 
     pip install Flask
+    pip install flask_restplus
+    pip install sqlite
+    pip install flask-sqlalchemy
     
 Ahora debemos clonar el repositorio que contiene la aplicacion web del segundo parcial para ello usamos git
 
@@ -94,7 +110,11 @@ Debido  a que algunas consultas necesitan de programas particulares como sysstat
 
 ![][10]
 
+finalmente para la validacion de ejecucion del servicio de netstat se uso el comando 
 
+        sudo netstat -plnt
+
+![][11]
         
 
 
@@ -115,5 +135,5 @@ Debido  a que algunas consultas necesitan de programas particulares como sysstat
 [8]: images/8.PNG
 [9]: images/9.PNG
 [10]: images/10.PNG
-
+[11]: images/netstat.PNG
 
