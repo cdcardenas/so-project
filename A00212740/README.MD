@@ -86,6 +86,10 @@ con el ambiente activo procedemos a instalar Flask
     pip install sqlite
     pip install flask-sqlalchemy
     
+    
+![][12]
+    
+    
 Ahora debemos clonar el repositorio que contiene la aplicacion web del segundo parcial para ello usamos git
 
     git clone https://github.com/cdcardenas/so-exam2.git
@@ -136,4 +140,4 @@ finalmente para la validacion de ejecucion del servicio de netstat se uso el com
 [9]: images/9.PNG
 [10]: images/10.PNG
 [11]: images/netstat.PNG
-
+[12]: images/restplus.PNG
